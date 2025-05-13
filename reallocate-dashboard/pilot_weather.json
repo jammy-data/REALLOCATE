@@ -1,0 +1,52 @@
+{
+    "locations": {
+        "Barcelona": {
+            "weather": {
+                "temperature": 13.0,
+                "humidity": 79.5,
+                "precipitation": 0.0,
+                "last_updated": 1741111902.3854697
+            },
+            "air_quality": {
+                "AQI": 20,
+                "last_updated": 1741111903.1297147
+            },
+            "traffic": {
+                "congestion_level": 0.2,
+                "last_updated": 1741114909.163807
+            }
+        },
+        "Lyon": {
+            "weather": {
+                "temperature": 8.1,
+                "humidity": 68.7,
+                "precipitation": 0.0,
+                "last_updated": 1741111902.674367
+            },
+            "air_quality": {
+                "AQI": 28,
+                "last_updated": 1741111903.1297147
+            },
+            "traffic": {
+                "congestion_level": 0.0,
+                "last_updated": 1741114909.163807
+            }
+        },
+        "Tampere": {
+            "weather": {
+                "temperature": 0.6,
+                "humidity": 80.4,
+                "precipitation": 0.0,
+                "last_updated": 1741111902.9094646
+            },
+            "air_quality": {
+                "AQI": 16,
+                "last_updated": 1741111903.1297147
+            },
+            "traffic": {
+                "congestion_level": 0.0,
+                "last_updated": 1741114909.163807
+            }
+        }
+    }
+}

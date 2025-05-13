@@ -1,0 +1,80 @@
+{% macro html(this, kwargs) %}
+<div
+  id="maplegend"
+  class="maplegend"
+  style="
+    position: absolute;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 10.5px;
+    right: 20px;
+    top: 20px;
+  "
+>
+  <!-- Text labels for min and max values of the color scale -->
+  <div style="text-align: justify; font-size: 12px">
+    <span style="color: red">Low</span>
+    <span style="color: green; float: right">High</span>
+  </div>
+
+  <!-- Gradient color scale from red to green -->
+  <div class="legend-scale" style="margin-bottom: 10px">
+    <!-- Added margin-bottom for spacing -->
+    <ul class="legend-labels">
+      <li>
+        <span
+          style="
+            background: linear-gradient(to right, red, yellow, green);
+            width: 150px;
+            height: 20px;
+            display: block;
+          "
+        ></span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Fixed legend for missing data with spacing -->
+  <div class="legend-scale" style="margin-top: 10px">
+    <!-- Added margin-top for space -->
+    <ul class="legend-labels">
+      <li>
+        <span
+          style="
+            background-color: rgba(128, 128, 128, 0.6);
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            border: 3px solid grey;
+          "
+        ></span>
+        Data Missing
+      </li>
+    </ul>
+  </div>
+</div>
+
+<style type="text/css">
+  .maplegend .legend-scale ul {
+    margin: 0;
+    padding: 0;
+    color: #0f0f0f;
+  }
+  .maplegend .legend-scale ul li {
+    list-style: none;
+    line-height: 18px;
+    margin-bottom: 1.5px;
+  }
+  .maplegend ul.legend-labels li span {
+    float: left;
+    height: 16px;
+    width: 16px;
+    margin-right: 4.5px;
+  }
+  .legend-scale ul.legend-labels li span {
+    margin-bottom: 5px;
+  } /* Ensure consistent spacing between list items */
+</style>
+{% endmacro %}

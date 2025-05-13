@@ -1,0 +1,266 @@
+        [class^="emotion-cache"] {
+            display: none !important;
+        }
+        /* Hide any iframes occupying extra space */
+        .stIFrame {
+            display: none !important;
+        }
+        .stAppViewBlockContainer {
+            padding-bottom: 0;
+        } 
+        .custom-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between; /* Align title and logos on opposite sides */
+            align-items: center;
+            padding: 20px; /* Space inside the container */
+            background-color: #f7f7f7; /* Light background for the container */
+            border-radius: 8px; /* Rounded corners for the container */
+            border-bottom: 1px solid #ccc;  
+        }
+        .custom-title1 {
+            font-size: 28px;
+            font-family: 'Arial', sans-serif;  /* Custom font */
+            font-weight: bold;                /* Bold text */
+            text-align: left;                 /* Left align the title */
+            margin: 0;                        /* No margin around the title */
+            padding: 0;
+        }
+
+        .custom-title2 {
+            font-size: 20px;
+            color: #2a9d8f;
+            font-weight: bold;                /* Bold text */
+            text-align: left;                 /* Left align the title */
+            margin: 0;                        /* No margin around the title */
+            padding: 0;
+        }
+        .header-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .logos-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;       /* Align logos to the right */
+            align-items: center;
+        }
+
+        .logo {
+            width: 200px;    /* Adjust the width as needed */
+            height: auto;    /* Keep the aspect ratio intact */
+            max-width: 100%; /* Make sure it doesn't exceed the parent container */
+            margin-top: 10px;               /* Space between logos */
+            
+        }
+                /* Footer container */
+        .footer-container {
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between; /* Text on left, logos on right */
+            align-items: center;
+            padding: 20px;
+            background-color: #f8f9fa; /* Light grey background */
+            border-top: 1px solid #ddd; /* Top border */
+            font-size: 14px;
+            color: #333; /* Text color */
+           
+        }
+
+        /* Logos container */
+        .footer-logos {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; /* Align logos to the right */
+        }
+
+        .footer-logo {
+            width: 100px; /* Set a consistent size for logos */
+            height: auto;
+            margin-top: 10px;
+        }
+        .block-container {
+            max-width: 1200px;  /* Adjust this value to control the max width */
+            padding-left: 2%;
+            padding-right: 2%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            position: relative;
+        }
+        iframe {
+            padding-top: 20px;
+            height: 600px !important;  /* Fix the iframe height */
+            max-height: 600px;  /* Restrict the iframe from growing beyond this */
+            overflow: hidden;  /* Prevent the iframe from overflowing */
+        }
+        .stSelectbox {
+            margin-top: 20px; /* Adds space between the map and selectbox */
+        }
+        .scalable-container {
+            overflow-x: auto;  /* Enables horizontal scrolling */
+            width: 100%;  /* Make the container full width */
+            margin-top: 20px;  /* Adjust spacing between header and rows */
+            margin-bottom: 40px;
+            max-width: 100%;  /* Ensure the container does not exceed the page width */
+        }
+        .scrollable-row, .scrollable-row-titles {
+            display: flex;
+            justify-content: space-between;
+            width: auto;
+            align-items: center;  /* Ensures content is vertically aligned */
+        }
+        .scrollable-row-titles {
+            font-weight: bold;
+            border-bottom: 1px solid #ccc; /* Adds a light border under the header row */
+            background-color: #f7f7f7; /* Optional: background color for the header */
+        }
+        .column {
+            padding: 10px;
+            text-align: left;
+            flex-grow: 1; /* Allows columns to grow and fill the container */
+            flex-basis: 0; /* Distributes space evenly */
+            min-width: 200px; /* Prevents columns from becoming too narrow */
+            line-height: normal;
+        }
+        .city-button {
+            background-color: transparent;
+            border: none;
+            font-weight: bold;
+            color: #007BFF;
+            cursor: pointer;
+            text-align: left;
+            padding: 0px;
+            margin: 0;
+            line-height: normal;
+        }
+        .scrollable-row:hover {
+            background-color: #f0f0f0;
+        }
+        .city-button:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        @media (max-width: 750px) {
+            button[kind="secondary"] {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+            }
+            .custom-container {
+                justify-content: center; /* Center horizontally */
+            }
+            .custom-title1 {
+                text-align: center;
+            }
+             .custom-title2 {
+                text-align: center;
+            }
+            .logos-container {
+                display: none;
+                width: 0px;
+            }
+            .footer-container {
+                flex-direction: column; /* Stack content vertically */
+                text-align: center;    /* Center-align text */
+            }
+
+            .footer-logos {
+                flex-direction: column;
+                justify-content: center; /* Center logos */
+
+            }
+            .footer-logo {
+                width: 200px;
+                margin-top: 40px;
+            }
+        }
+        div.stDownloadButton > button {
+            background-color: #008CBA !important;
+            color: white !important;
+            padding: 12px 24px !important;
+            font-size: 18px !important;
+            font-weight: bold !important;
+            border-radius: 8px !important;
+            transition: background-color 0.3s ease !important;
+            border: none !important;
+            cursor: pointer !important;
+            float: bottom;
+        }
+        div.stDownloadButton > button:hover {
+            background-color: #005f73 !important;
+        }
+        .image-button {
+            border: none;
+            background: none;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+        }
+        .image-button img {
+            width: 100px;
+            height: 100px;
+        }
+        /* div.st-emotion-cache-12w0qpk > button {
+            background-color: red !important;
+            border: none;
+        }
+        .image-button + button {
+            background-color: red;
+        } */
+        button[kind="primary"] {
+            border: none;
+            color: darkblue;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            transition: background-color 0.3s ease-in-out;
+          }
+        button[kind="primary"]:hover {
+            text-decoration: underline;
+            background-color: white;
+            color: blue;
+        }
+        .st-emotion-cache-j5r0tf {
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .st-emotion-cache-j5r0tf:has(button[kind="primary"]:hover) {
+            box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+        }
+        button[kind="tertiary"] {
+            background-color: #ff7f00;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+        .reset-button:hover {
+            background-color: #e66a00;
+        }
+        .city-image {
+            padding-bottom: 20px; /* Adjust space below image */
+        }
+        /* Style for expander buttons */
+        .stExpander {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Hover effect */
+        .stExpander:hover {
+            background-color: #f0f0f0;
+            border-color: #007bff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }

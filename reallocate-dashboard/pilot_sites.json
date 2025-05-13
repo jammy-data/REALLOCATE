@@ -1,0 +1,5 @@
+[
+    {"name": "Barcelona", "coordinates": [41.388775052689645, 2.181384286325569], "intervention_start": "2023-09-25", "intervention_end": "2024-01-23"},
+    {"name": "Lyon", "coordinates": [45.764627614259176, 4.832380229688456],"intervention_start": "2024-12-24", "intervention_end": "2025-03-12"},
+    {"name": "Tampere","coordinates":[61.50075463020767, 23.74786165480674], "intervention_start": "2023-07-22", "intervention_end": "2024-12-19"}  
+]
