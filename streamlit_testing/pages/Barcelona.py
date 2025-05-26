@@ -18,9 +18,7 @@ DATASETS = {
 #Add a home button to go back to the homepage
 if st.button("Homepage"):
     st.switch_page("Home.py")
-#Add a button to go to the Gothenberg page
-if st.button("Gothenberg"):
-    st.switch_page("pages/page_2.py")
+
 # Streamlit dropdown
 st.title("Dataset Explorer")
 dataset_name = st.selectbox("Choose a dataset", list(DATASETS.keys()))

@@ -4,9 +4,6 @@ import pandas as pd
 if st.button("Homepage"):
     st.switch_page("Home.py")
 
-if st.button("Barcelona"):
-    st.switch_page("pages/page_1.py")
-
 st.title("Gothenburg Dataset Explorer")
 st.write("This is a test page for the Gothenburg dataset explorer.")
 st.write("You can add more functionality here as needed.")

@@ -1,12 +1,15 @@
 import streamlit as st
-import pandas as pd
-import plotly.express as px
 
-st.sidebar.success("Select a demo above.")
-st.title("Homepage with test buttons")
+PILOTS = ["Barcelona", "Gothenburg"]
+st.set_page_config(
+    page_title="Home",
+    page_icon="🏠",
+    layout="wide",
+)
+with st.form("pilot_form"):
+    pilot_name = st.selectbox("Choose a variable", PILOTS)
+    submitted = st.form_submit_button("Go to pilot page")
+    if submitted:
+        st.switch_page(f"pages/{pilot_name}.py")
 
-if st.button("Barcelona"):
-    st.switch_page("pages/page_1.py")
-if st.button("Gothenburg"):
-    st.switch_page("pages/page_2.py")
 

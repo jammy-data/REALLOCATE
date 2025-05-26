@@ -4,8 +4,8 @@ port = 80
 
 [theme]
 base = "light"
-primaryColor = "#3440eb"
-backgroundColor = "#eeedf5"
-secondaryBackgroundColor = "#3440eb"
+primaryColor = "199, 222, 227"
+backgroundColor = "199, 222, 227"
+secondaryBackgroundColor = "#c7dee3"
 textColor = "#262730"
 font = "sans serif"
